@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap4 CheatSheet</title>
+
+    <!-- STYLES -->
+    <link href="bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .section-modal {
+        margin-top: 80px;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-light bg-light fixed-top navbar-expand-sm">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#collapsible-navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsible-navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MODAL -->
+    <section class="section-modal">
+      <button
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#my-modal"
+      >
+        Launch a modal
+      </button>
+      <div class="modal fade" id="my-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title">Hello World!</h2>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Tempore voluptates autem veniam rem exercitationem temporibus,
+                placeat voluptatibus libero commodi doloremque blanditiis unde
+                velit ipsum beatae porro, facilis iusto accusantium quidem.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-danger" data-dismiss="modal">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="jquery.slim.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+  </body>
+</html>
